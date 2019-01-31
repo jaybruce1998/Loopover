@@ -1,0 +1,57 @@
+Everybody likes sliding puzzles! For this kata, we're going to be looking at a special type of sliding puzzle called Loopover. With Loopover, it is more like a flat rubik's cube than a sliding puzzle. Instead of having one open spot for pieces to slide into, the entire grid is filled with pieces that wrap back around when a row or column is slid. For example, if we have the grid:
+
+ABCDE<br/>
+FGHIJ<br/>
+KLMNO<br/>
+PQRST<br/>
+UVWXY<br/>
+
+and we do R0 (move the 0th row right) then we get:
+
+EABCD<br/>
+FGHIJ<br/>
+KLMNO<br/>
+PQRST<br/>
+UVWXY<br/>
+
+Likewise, if we do L0, we get:
+
+ABCDE<br/>
+FGHIJ<br/>
+KLMNO<br/>
+PQRST<br/>
+UVWXY<br/>
+
+if we do U2:
+
+ABHDE<br/>
+FGMIJ<br/>
+KLRNO<br/>
+PQWST<br/>
+UVCXY<br/>
+
+and if we do D2 we will once again return to the original grid. With all of this in mind, I'm going to make a Loopover with a scrambled grid, and your solve method will give me an ArrayList of moves I can do to get back to the solved grid I give you.
+
+For example:
+
+SCRAMBLED GRID:
+
+DEABC<br/>
+FGHIJ<br/>
+KLMNO<br/>
+PQRST<br/>
+UVWXY<br/>
+
+SOLVED GRID:
+
+ABCDE<br/>
+FGHIJ<br/>
+KLMNO<br/>
+PQRST<br/>
+UVWXY<br/>
+
+One possible solution would be ["L0", "L0"]
+Another would be ["R0", "R0", "R0"]
+etc. etc.
+
+Good luck! Let me know if there are any issues with the kata! :)
